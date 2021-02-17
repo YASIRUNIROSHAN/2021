@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Exam System</title>
+
+    <link rel="shortcut icon" href="https://www.cyberdudenetworks.com/client-login/assets/images/favicon.png"
+        type="image/x-icon">
+
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7COpen+Sans&display=swap" />
+
+    <!-- Libraries -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom styling -->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/util.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/animation.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header>
+            <img class="logo" src="./static/img/cdn-channel.png" width="200"  alt="Logo" />
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Courses</a></li>
+                     <li><a href="{{ url_for('login') }}">Sign in</a></li>
+                    <li><a href="{{ url_for('video_feed') }}">Sign Up</a></li>
+                </ul>
+            </nav>
+            <button> <i class="fa fa-envelope-o" /></i> Contact Us</button>
+
+        </header>
+        <!-- End Header -->
+
+        <!-- Main Content -->
+        <div class="content">
+            <div class="hero-info m-60" style="flex-basis: 640px;">
+                <h1>Online Examination System <span class="locale">-OES</span></h1>
+                <p>Designed to fit the modern world, this web Application is far from capable of conducting an online exam system, This has user Monitoring system and give feedback according to the user's misbehavior. </p>
+                <a class="btn btn-outline" href="#" target="_blank"> <i
+                        class="fa fa-video-camera"></i> Learn now</a>
+
+                <!-- <div class="social-links">
+                    <ul>
+                        <li><a href="#" target="_blank"
+                                class="btn-social bg-facebook">
+                                <i class="fa fa-facebook"></i> Facebook
+                            </a></li>
+                        <li><a href="#" target="_blank"
+                                class="btn-social bg-youtube">
+                                <i class="fa fa-youtube"></i> YouTube
+                            </a></li>
+                        <li><a href="#" target="_blank"
+                                class="btn-social bg-instagram">
+                                <i class="fa fa-instagram"></i> Instagram
+                            </a></li>
+
+                    </ul>
+
+                </div> -->
+            </div>
+
+            <img src="static/img/undraw_researching_22gp.svg" width="550" height="600" alt="Learning">
+        </div>
+
+        <!-- End Main Content -->
+
+        <!-- Footer -->
+        <footer>
+
+        </footer>
+        <!-- End Footer -->
+    </div>
+
+
+</body>
+
+</html>
